@@ -1,132 +1,71 @@
 <!DOCTYPE html>
 <html>
-<title>Social Learning </title>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body background-color= "w3-grey" class="w3-content" style="max-width:1300px" >
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+<body>
 
-<!-- First Grid: Logo & Navigation -->
-<div class="w3-row">
-  <div class="w3-half w3-orange w3-container w3-center" style="height:700px">
-	<div class="w3-padding-64">
-  	<h1>Social Learning</h1>
-	</div>
-	<div class="w3-padding-64">
-  	<a href="#" class="w3-button w3-orange w3-block w3-hover-white w3-padding-16">Home</a>
-  	<a href="#work" class="w3-button w3-orange w3-block w3-hover-white w3-padding-16">Topics</a>
-  	<a href="#work" class="w3-button w3-orange w3-block w3-hover-white w3-padding-16">Study Sessions</a>
-  	<a href="#contact" class="w3-button w3-orange w3-block w3-hover-white w3-padding-16">Material</a>
-	</div>
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
+  <h1 class="w3-xlarge">PHOTOGRAPHER</h1>
+  <h1>John Doe</h1>
+  
+  <div class="w3-padding-32">
+    <div class="w3-bar w3-border">
+      <a href="#" class="w3-bar-item w3-button">Home</a>
+      <a href="#" class="w3-bar-item w3-button w3-light-grey">Study</a>
+      <a href="#" class="w3-bar-item w3-button">Material</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small">Social Learning</a>
+    </div>
   </div>
-  <div class="w3-half w3-white w3-container" style="height:700px">
-	<div class="w3-padding-64 w3-center">
-  	<h1>User Name</h1>
-  	<div class="w3-left-align w3-padding-large">
-    	<p>Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-    	<p>Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-  	</div>
-	</div>
+</header>
+
+<!-- Photo Grid -->
+<div class="w3-row-padding w3-grayscale" style="margin-bottom:128px">
+  <div class="w3-half">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/falls2.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+    <img src="/w3images/nature.jpg" style="width:100%">
+    <img src="/w3images/mist.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
   </div>
-</div>
-<!-- Second Grid: Topics and Study Sessions -->
-<div class="w3-row">
-  <div class="w3-half w3-white w3-center" style="min-height:800px" id="work">
-	<div class="w3-padding-64">
-  	<h2>Topics</h2>
-  	<p class="w3-opacity">SEARCH</p>
-  	<form class="w3-container w3-card w3-padding-32 w3-white" action="/action_page.php" target="_blank">
-    	<div class="w3-section">
-      	<label>Name/Keywords</label>
-      	<input class="w3-input" style="width:100%;" type="text" required name="Name">
-    	</div>
-    	<div class="w3-section">
-    	</div>
-    	<button type="submit" class="w3-button w3-grey w3-right">Send</button>
-	</div><br>
-  </div>
-  <div class="w3-half w3-orange w3-container" style="min-height:800px">
-	<div class="w3-padding-64 w3-center">
-  	<h2>Study Sessions</h2>
-  	<p class="w3-opacity">Join a Study Session</p>
-  	<form class="w3-container w3-card w3-padding-32 w3-white" action="/action_page.php" target="_blank">
-    	<div class="w3-section">
-      	<label>Name</label>
-      	<input class="w3-input" style="width:100%;" type="text" required name="Name">
-    	</div>
-    	<div class="w3-section">
-      	<label>Email</label>
-      	<input class="w3-input" style="width:100%;" type="text" required name="Email">
-    	</div>
-    	<div class="w3-section">
-      	<label>Message</label>
-      	<input class="w3-input" style="width:100%;" type="text" required name="Message">
-    	</div>
-    	<button type="submit" class="w3-button w3-grey w3-right">Join</button>
-    	<br>
-    	<p class="w3-opacity">Create a Study Session</p>
-  	<form class="w3-container w3-card w3-padding-32 w3-white" action="/action_page.php" target="_blank">
-    	<div class="w3-section">
-      	<label>Name</label>
-      	<input class="w3-input" style="width:100%;" type="text" required name="Name">
-    	</div>
-    	<div class="w3-section">
-      	<label>Email</label>
-      	<input class="w3-input" style="width:100%;" type="text" required name="Email">
-    	</div>
-    	<div class="w3-section">
-      	<label>Message</label>
-      	<input class="w3-input" style="width:100%;" type="text" required name="Message">
-    	</div>
-    	<button type="submit" class="w3-button w3-grey w3-right">Create</button>
-  	</div>
-	</div>
+
+  <div class="w3-half">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+    <img src="/w3images/ocean.jpg" style="width:100%">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/mountainskies.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/underwater.jpg" style="width:100%">
   </div>
 </div>
-<!-- Third Grid: Material -->
-<div class="w3-row" id="contact">
-  <div class="w3-half w3-orange w3-container w3-center" style="height:700px">
-	<div class="w3-padding-64">
-  	<h1>Material</h1>
-  	<p class="w3-opacity">Add Material</p>
-  	<form class="w3-container w3-card w3-padding-32 w3-white" action="/action_page.php" target="_blank">
-    	<div class="w3-section">
-      	<label>Name</label>
-      	<input class="w3-input" style="width:100%;" type="text" required name="Name">
-    	</div>
-    	<div class="w3-section">
-      	<label>Email</label>
-      	<input class="w3-input" style="width:100%;" type="text" required name="Email">
-    	</div>
-    	<div class="w3-section">
-      	<label>Message</label>
-      	<input class="w3-input" style="width:100%;" type="text" required name="Message">
-    	</div>
-    	<button type="submit" class="w3-button w3-teal w3-right">Send</button>
-	</div>
-  </div>
-  <div class="w3-half w3-white w3-container" style="height:700px">
-	<div class="w3-padding-64 w3-padding-large">
-  	<h1>Contact</h1>
-  	<p class="w3-opacity">GET IN TOUCH</p>
-  	<form class="w3-container w3-card w3-padding-32 w3-white" action="/action_page.php" target="_blank">
-    	<div class="w3-section">
-      	<label>Name</label>
-      	<input class="w3-input" style="width:100%;" type="text" required name="Name">
-    	</div>
-    	<div class="w3-section">
-      	<label>Email</label>
-      	<input class="w3-input" style="width:100%;" type="text" required name="Email">
-    	</div>
-    	<div class="w3-section">
-      	<label>Message</label>
-      	<input class="w3-input" style="width:100%;" type="text" required name="Message">
-    	</div>
-    	<button type="submit" class="w3-button w3-teal w3-right">Send</button>
-  	</form>
-	</div>
-  </div>
+  
+<!-- End Page Content -->
 </div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
 
 </body>
 </html>
