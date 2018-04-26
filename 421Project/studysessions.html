@@ -63,18 +63,42 @@
       <form class="w3-container w3-card w3-padding-32 w3-white" action="/action_page.php" target="_blank">
       <label>Name</label>
       	<input class="w3-input-blue" style="width:100%;" type="text" required name="Name"><br><br>
-      <label>Email</label>
+      <label>Description</label>
       	<input class="w3-input-blue" style="width:100%;" type="text" required name="Email"><br><br>
-      <label>Message</label>
+      <label>Topic</label>
       	<input class="w3-input-blue" style="width:100%;" type="text" required name="Message"><br><br>
        </div>
       <footer class="w3-container w3-theme-l1">
         <p>StudyBuddies</p>
         <button type="submit" class="w3-button w3-blue-grey w3-right" style= "margin-bottom:15px">Create</button>
       </footer>
+      <p>Name:{{Session_ID}} <br>Description:{{Session_description}} <br> 
+  Topic:{{Topic_ID}} <br>
+return results:{{results}}</p>
     </div>
 </div>
 
+<script>
+var app = angular.module('myApp', []);
+app.controller('r_controller', function($scope, $http) {
+   $http.get("mysql/study_session")
+   .then(function (response) {
+      $scope.names = response.data;
+      // console.log(response.data);
+  });
+});
+
+app.controller('c_controller', function($scope, $http) {
+  $scope.save = function () {
+    $http.post("mysql/study_session", {"Name": $scope.Session_Name, "Description": $scope.Session_description, "Topic": $scope.Topic_ID})
+    .then(function (response) {
+        // $scope.added = response.data;
+        $scope.results = response.data;
+        console.log(response.data);
+    });
+  }    
+});
+</script>
 
 </body>
 </html>
